@@ -9,26 +9,28 @@ let menor
 let soma 
 
 qtdNumeros=Number(prompt("quantos numeros voce gostaria de solicitar?"))
-for(let contador=1;contador<=qntNumeros;contador+=1){
-    let numero=Number(prompt("informe o"+contador+"numero qualquer..."))
+for(let contador=1;contador<= qtdNumeros;contador+=1){
+    let qtdNumero=Number(prompt("informe o"+contador+"numero qualquer..."))
 
     if(contador==1){
-        menor=numero
-        maior=numero
+        menor=qtdNumeros
+        maior=qtdNumeros
     }else{
 
-        if(numero<menor){
-            menor=numero
+        if(qtdNumeros<menor){
+            menor=qtdNumeros
         }
-        if(numero>maior){
-            maior=numero
+        if(qtdNumeros>maior){
+            maior=qtdNumeros
         }
     
     }   
 }
 
 soma=0
-media= soma/qtdNumeros
+
+media= soma / qtdNumeros
+
 alert("menor "+menor)
 alert("maior "+maior)
-media("media "+media)
+alert("media "+media)
