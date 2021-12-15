@@ -2,10 +2,11 @@
 //repetir essa captura ate que o usuario digite ""
 //para cada repeticao escrever em tela a frase aleatoria capturada
 
-let frasesAleatorias = []
 let frases
-let respostas
+let frase
 
-do {
-    let frases=prompt("escreva frases aleatorias")
-} while (frases=="");
+do{
+ frase=prompt("escreva frases aleatorias")
+
+ document.write("<br>"+frase)
+} while (frase!= "");
