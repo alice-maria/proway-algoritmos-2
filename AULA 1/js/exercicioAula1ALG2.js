@@ -14,7 +14,9 @@ soma=0
 
 for(let contador=1;contador<= qtdNumeros;contador+=1){
     let numero=Number(prompt("informe o"+contador+"numero qualquer..."))
+    
 soma+=numero
+
     if(contador==1){
         menor=numero
         maior=numero
