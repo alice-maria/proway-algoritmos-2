@@ -1,0 +1,6 @@
+CREATE TABLE pessoas (
+    id    INTEGER PRIMARY KEY AUTOINCREMENT
+                  UNIQUE,
+    nome  TEXT,
+    idade INTEGER
+);
