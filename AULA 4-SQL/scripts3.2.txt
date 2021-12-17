@@ -1,0 +1,54 @@
+--inserir 4 usuarios na tabela 
+--para exercitar campos obrigatorios e campos opcionais
+
+
+insert 
+into usuarios (nome,email,senha,obs) 
+values ("maria ana","mariaaaana@gmail.com","abcde1","minha senha é ok")
+
+select * from usuarios
+
+insert
+into usuarios (nome,email,senha)
+values ("luiza","lulu@gmail.com","flores")
+
+insert
+into usuarios (nome,email,senha)
+values ("marta","martinha@.com","love123")
+
+insert
+into usuarios (nome,email,senha,obs)
+values ("jorge","jorginho@gmail.com","12345678","eu torço pro gremio")
+
+insert
+into usuarios (nome,email,senha,obs)
+values ("larissa","lari12@.com","123098","nao vou lembrar minha senha")
+
+select * from usuarios
+where
+id=2
+
+update usuarios
+set
+    nome="Marta Gomes",
+    obs="assim esta melhor"
+where
+id=2
+
+select * from pessoas
+
+insert into pessoas (nome,idade) values("Rubem",32);
+insert into pessoas (nome,idade) values("Oliota",23);
+insert into pessoas (nome,idade) values("Tester",18);
+insert into pessoas (nome,idade) values("Junin",17);
+insert into pessoas (nome,idade) values("Plenin",20);
+insert into pessoas (nome,idade) values("Senin",25);
+insert into pessoas (nome,idade) values("Master",70);
+
+update pessoas
+set
+    idade=18
+where
+nome like "%n"
+
+drop table medrop-- apagar a tabela
